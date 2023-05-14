@@ -1,5 +1,4 @@
 use core::slice;
-use nix::ioctl_readwrite;
 use std::ffi::{c_char, c_int};
 
 /// C definition for exchanging driver version information.
@@ -65,5 +64,3 @@ impl<'c_struct_lifetime> From<CDrmVersion> for DrmVersion<'c_struct_lifetime> {
         }
     }
 }
-
-ioctl_readwrite!(drm_driver_version, b'd', 0x00, CDrmVersion);
