@@ -2,6 +2,7 @@ use core::slice;
 use std::ffi::{c_char, c_int};
 
 /// C definition for exchanging driver version information.
+/// See: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/drm/drm.h#n139
 #[repr(C)]
 #[derive(Debug)]
 pub struct CDrmVersion {
