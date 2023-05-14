@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+# Cargo build files
+debug/
+target/
+
+# Rustfmt backups
+**/*.rs.bk
