@@ -10,6 +10,8 @@ mod definitions;
 // simpler.
 type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
 
+// From the linux kernel source tree, see:
+// https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/drm/drm.h#n966
 ioctl_readwrite!(
     drm_driver_version,
     b'd',
